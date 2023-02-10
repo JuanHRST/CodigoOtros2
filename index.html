@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Cambiamos el nombre a index.html -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +12,10 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <form class="formulario" id="form">
+    Nombre <label for=""></label><input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    Edad <label for=""></label><input type="number" name="age" id="age">
     <br />
 
     Nacionalidad
@@ -26,15 +26,15 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+    <input type="submit" onclick="crearElemento"> <!-- No tenia funcion on click, no he logrado hacerla funcionar -->
   </form>
 
-  <div>
+  <div id="lista-de-invitados"> <!-- agregamos la clase "lista-de-invitados" que se solicitaba en el js -->
     <h2>Lista de invitados</h2>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="/codigo-otros-2/formulario.js"></script> <!-- Script mal conectado -->
 </body>
 
 </html>
